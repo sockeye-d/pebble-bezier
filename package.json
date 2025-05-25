@@ -1,0 +1,29 @@
+{
+  "name": "bezier",
+  "author": "fish",
+  "version": "1.0.0",
+  "keywords": ["pebble-watchface"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "bezier",
+    "uuid": "14ef2447-d827-4e99-a193-eaef6117ded0",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk",
+      "diorite"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "resources": {
+      "media": []
+    }
+  }
+}

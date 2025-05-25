@@ -1,0 +1,9 @@
+{
+    "name": "bezier",
+    "files": [
+        {
+            "directory": ".",
+            "recursive": 1
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "directory": "/home/fish/Documents/pebble/bezier/",
+    "arguments": [
+      "gcc",
+      "-I/home/fish/.rebbletool/rebbletool/sdk/SDKs/4.3/sdk-core/pebble/basalt/include/",
+      "-Ibuild/include/",
+      "-Ibuild/basalt/",
+      "-Iusr/include/"
+    ],
+    "file": "*.*"
+  }
+]
