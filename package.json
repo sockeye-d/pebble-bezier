@@ -1,29 +1,47 @@
 {
-  "name": "bezier",
-  "author": "fish",
-  "version": "1.0.0",
-  "keywords": ["pebble-watchface"],
-  "private": true,
-  "dependencies": {},
-  "pebble": {
-    "displayName": "bezier",
-    "uuid": "14ef2447-d827-4e99-a193-eaef6117ded0",
-    "sdkVersion": "3",
-    "enableMultiJS": true,
-    "targetPlatforms": [
-      "aplite",
-      "basalt",
-      "chalk",
-      "diorite"
+    "name": "bezier",
+    "author": "fish",
+    "version": "1.0.0",
+    "keywords": [
+        "pebble-watchface"
     ],
-    "watchapp": {
-      "watchface": true
+    "private": true,
+    "dependencies": {
+        "pebble-clay": "^1.0.4"
     },
-    "messageKeys": [
-      "dummy"
-    ],
-    "resources": {
-      "media": []
-    }
-  }
+    "pebble": {
+        "displayName": "bezier",
+        "uuid": "c6f9bb28-5393-4caa-8ec5-32c1ed505fb1",
+        "sdkVersion": "3",
+        "enableMultiJS": true,
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite"
+        ],
+        "watchapp": {
+            "watchface": true
+        },
+        "resources": {
+            "media": []
+        },
+        "messageKeys": [
+            "background_color",
+            "hour_hand_length",
+            "minute_hand_length",
+            "hands_thickness",
+            "hands_color",
+            "ticks_thickness",
+            "ticks_overlay_thickness",
+            "ticks_color",
+            "battery_indicator_thickness",
+            "high_battery_color",
+            "medium_battery_color",
+            "low_battery_color"
+        ]
+    },
+    "capabilities": [
+        "configurable"
+    ]
 }

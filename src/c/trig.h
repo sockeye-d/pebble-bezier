@@ -7,8 +7,8 @@
 #define TAU 6.283185307
 
 #define TAU_LU TRIG_MAX_ANGLE
-#define PI_LU (TAU_LU / 2)
-#define HALF_PI_LU (PI_LU / 2)
+#define PI_LU (TAU_LU >> 1)
+#define HALF_PI_LU (TAU_LU >> 2)
 
 #define PHI 2.39996322972865332
 
