@@ -13,7 +13,7 @@
 // #define HANDS_RESOLUTION 50
 #define TIME_SUBSTEPS 6
 #define TIME_SUBSTEPS_SECONDS (60 / TIME_SUBSTEPS)
-#define DEBUG_HANDS
+// #define DEBUG_HANDS
 #define SETTINGS_KEY 1
 
 static Window *s_main_window;
