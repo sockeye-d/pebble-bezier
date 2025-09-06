@@ -105,6 +105,7 @@ static void inbox_received_handler(DictionaryIterator *iter, void *context) {
 
   save_settings();
 
+  window_set_background_color(s_main_window, settings.background_color);
   layer_mark_dirty(hands_layer);
 }
 
@@ -177,7 +178,7 @@ static void hands_update_handler(Layer *layer, GContext *ctx) {
   layer_bounds_2.size.h -= 14;
   layer_bounds_2.origin.x += 7;
   layer_bounds_2.origin.y += 7;
-  graphics_context_set_stroke_width(ctx, 3);
+  graphics_context_set_stroke_width(ctx, settings.battery_indicator_thickness);
   switch (battery / 10) {
   case 1:
   case 2:
@@ -213,7 +214,7 @@ static void hands_update_handler(Layer *layer, GContext *ctx) {
 
   // draw ticks
   graphics_context_set_stroke_color(ctx, settings.ticks_color);
-  graphics_context_set_stroke_width(ctx, 2);
+  graphics_context_set_stroke_width(ctx, settings.ticks_thickness);
   for (int32_t i = 0; i < 12; i++) {
     int32_t angle = i * TRIG_MAX_ANGLE / 12;
     graphics_draw_line(
@@ -298,7 +299,7 @@ static void init() {
   load_settings();
   // Create main Window element and assign to pointer
   s_main_window = window_create();
-  window_set_background_color(s_main_window, GColorBlack);
+  window_set_background_color(s_main_window, settings.background_color);
 
   // Set handlers to manage the elements inside the Window
   window_set_window_handlers(
